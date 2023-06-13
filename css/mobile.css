@@ -1,0 +1,685 @@
+/* ================================== MEDIA =============================== */
+/* ================================== MEDIA =============================== */
+/* ================================== 1200 ================================ */
+@media (max-width: 1200px) {
+
+  /* ==========HEADER-BODY========== */
+  .header__title {
+    font-weight: 900;
+    font-size: 50px;
+    max-width: 478px;
+  }
+
+  .header__images {
+    max-width: 450px;
+  }
+
+  /* ==========LEARN========== */
+  .learn__image {
+    max-width: 450px;
+  }
+
+  .learn__content {
+    margin-right: 20px;
+  }
+
+  /* ==========BLOG========== */
+  .blog__content-info {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 8px;
+  }
+
+  .blog__content-element {
+    padding: 0;
+  }
+
+  .blog__content-element::after {
+    content: none;
+  }
+
+  .blog__content-directions {
+    order: 1;
+  }
+
+  .blog__content-date {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .blog__content-time {
+    order: 2;
+  }
+}
+
+/* ================================== 1100 ================================ */
+/*Отключаем анимацию на мобильных устройствах*/
+@media screen and (max-width: 1100px) {
+  .wow {
+    animation-name: none !important;
+    visibility: visible !important;
+  }
+
+  .header__top-fixed {
+    animation: none;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  /* ==========GLOBAL========== */
+  .title {
+    font-size: 36px;
+  }
+
+  /* ==========HEADER-TOP========== */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.349);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s;
+  }
+
+  .overlay--show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .burger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 150;
+    transition: all .3s;
+    cursor: pointer;
+  }
+
+  .burger span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #424551;
+    border-radius: 3px;
+    margin: 4px 0;
+    transform: scale(1);
+    transition: all .3s;
+  }
+
+  .burger::before,
+  .burger::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #424551;
+    border-radius: 3px;
+    transition: all .4s;
+    margin: 0 auto;
+  }
+
+  .burger--follow {
+    top: 15px;
+    right: 15px;
+    box-shadow: 0 1px 8px #a1a1a1;
+    background-color: #fff;
+  }
+
+  .active::before {
+    transform: rotate(45deg) translate(0%, 50%);
+  }
+
+  .active::after {
+    transform: rotate(-45deg) translate(0%, -50%);
+  }
+
+  .active span {
+    transform: scale(0);
+    margin: -3px;
+  }
+
+  .header__top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: auto;
+    min-width: 320px;
+    transform: translateX(100%);
+    transition: all .4s;
+    z-index: 100;
+  }
+
+  .header__top--open {
+    transform: translateX(0%);
+  }
+
+  .header__top-inner {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 100px 0;
+  }
+
+  .header__logo {
+    margin: 0 0 30px 0;
+  }
+
+  .header__nav {
+    text-align: center;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .header__nav-item {
+    margin: 0;
+  }
+
+  .header__nav-link {
+    text-align: center;
+    display: block;
+    padding: 10px;
+  }
+
+  .header__btn-box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .header__top-button,
+  .header__profile {
+    margin-right: 0;
+    margin: 20px 0;
+  }
+
+  /* ==========HEADER-BODY========== */
+  .header__body-nombers {
+    display: none;
+  }
+
+  .about__images {
+    max-width: 400px;
+  }
+
+  /* ==========DIRECTIONS========== */
+  .directions__list {
+    gap: 30px 10px;
+  }
+
+  .directions__content {
+    padding: 10px;
+  }
+
+  /* ==========CERTIFICATE========== */
+  .certificate__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate__content {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .certificate__headings {
+    text-align: center;
+  }
+
+  /* ==========JOBS========== */
+  .jobs__students-company {
+    gap: 40px 5%;
+  }
+
+  /* ==========LEARN========== */
+  .learn__image {
+    display: none;
+  }
+
+  .learn__content {
+    margin-right: 0;
+  }
+
+  /* ==========FOOTER========== */
+  .footer__inner {
+    grid-template-columns: minmax(270px, 280px) auto auto auto;
+    grid-template-rows: repeat(2, auto);
+    gap: 20px 10px;
+    justify-items: center;
+  }
+}
+
+/* ================================== 900 ================================ */
+@media (max-width:900px) {
+
+  /* ==========HEADER-BODY========== */
+  .header__images {
+    max-width: 350px;
+  }
+
+  .header__main-content {
+    margin-right: 5px;
+  }
+
+  /* ==========ABOUT US========== */
+  .about__content {
+    margin-right: 15px;
+  }
+
+  .about__images {
+    max-width: 250px;
+    align-self: center;
+  }
+
+  /* ==========DIRECTIONS========== */
+  .directions__filter-point {
+    margin-right: 10px;
+  }
+
+
+  /* ==========JOBS========== */
+  .jobs__students-company {
+    grid-template: repeat(3, auto) / repeat(4, 1fr);
+  }
+
+  /* ==========BLOG========== */
+  .blog__content {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .blog__item {
+    padding: 0px 0px 30px 0px;
+  }
+
+  .blog__img-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .blog__img-box img {
+    width: auto;
+  }
+
+  /* ==========CONTACT========== */
+  .contact__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact__content {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .contact__map {
+    height: 300px;
+    width: 100%;
+    max-width: none;
+  }
+
+  /* ==========QUESTIONS========== */
+  .questions__images {
+    display: none;
+  }
+
+  .questions__content {
+    margin: 0;
+  }
+
+  .questions__form-row,
+  .questions__checkbox-label {
+    max-width: 100%;
+  }
+}
+
+/* ================================== 800 ================================ */
+@media (max-width:800px) {
+
+  /* ==========HEADER-BODY========== */
+  .header__images {
+    max-width: 300px;
+  }
+
+  /* ==========DIRECTIONS========== */
+  .directions__list {
+    grid-template: repeat(3, auto) / repeat(2, 1fr);
+  }
+
+  /* ==========TESTIMONIALS========== */
+  .testimonials__arrow {
+    display: none;
+  }
+
+  .testimonials__slider {
+    padding: 30px 15px;
+  }
+
+  /* ==========FOOTER========== */
+  .footer__inner {
+    grid-template-columns: minmax(270px, 280px) minmax(270px, 280px) auto;
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
+/* ================================== 700 ================================ */
+@media (max-width:700px) {
+
+  /* ==========HEADER-BODY========== */
+  .header__images {
+    display: none;
+  }
+
+  .header__main-content {
+    margin-right: 0;
+  }
+
+  .header__title {
+    text-align: center;
+    margin: 0 auto 20px auto;
+    font-size: 46px;
+  }
+
+  .header__main {
+    grid-template-columns: 1fr;
+  }
+
+  /* ==========ABOUT US========== */
+
+  .main-about {
+    padding-top: 100px;
+  }
+
+  .about__createx {
+    margin-bottom: 100px;
+  }
+
+  .about__images,
+  .about__image-box {
+    display: none;
+  }
+
+  /* ==========DIRECTIONSS========== */
+  .main-directions {
+    padding-top: 20px;
+  }
+
+  .directions {
+    margin-bottom: 100px;
+  }
+
+  /* ==========CERTIFICATE========== */
+  .main__certificate {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  /* ==========LEARN========== */
+  .learn__akord-head {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .learn__akord-head span {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  /* ==========FOOTER========== */
+  .footer__inner {
+    grid-template-columns: minmax(270px, 280px) auto;
+  }
+}
+
+/* ================================== 550 ================================ */
+@media (max-width:550px) {
+
+  /* ==========GLOBAL========== */
+  .title {
+    font-size: 26px;
+  }
+
+  /* ==========HEADER-BODY========== */
+  .header__btn-block {
+    flex-direction: column;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  #button--empty-1 {
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  /* ==========DIRECTIONSS========== */
+
+  .directions__list {
+    grid-template: none;
+  }
+
+  .directions__list-item--empty {
+    display: none;
+  }
+
+  /* ==========TEAM========== */
+  .team__img-box {
+    max-width: 300px;
+    margin: 0 auto 16px;
+  }
+
+  .team__slider-arrows {
+    display: none;
+  }
+
+  .team__dots .slick-dots {
+    padding-top: 20px;
+  }
+
+  .team__dots button {
+    width: 20px;
+  }
+
+  /* ==========TESTIMONIALS========== */
+  .testimonials__sliders-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .testimonials__slide-inner {
+    padding-left: 30px;
+  }
+
+  .testimonials__blockquote {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .testimonials__blockquote::before {
+    left: -30px;
+    width: 20px;
+  }
+
+  .testimonials__dots button {
+    width: 20px;
+  }
+
+  /* ==========JOBS========== */
+  .jobs__students-company {
+    grid-template: repeat(4, auto) / repeat(3, 1fr);
+  }
+
+  /* ==========BLOG========== */
+  .blog__headings {
+    margin-bottom: 30px;
+  }
+
+  .blog__top {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  /* ==========QUESTIONS========== */
+
+  .questions__form-row {
+    grid-template: repeat(1, auto) / repeat(1, 1fr);
+  }
+
+  .questions__form-label {
+    margin-right: 0;
+  }
+
+  .questions__form-label,
+  .questions__form-row {
+    font-size: 14px;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .questions__form-btn {
+    margin-top: 25px;
+  }
+
+  /* ==========FOOTER========== */
+  .footer__inner {
+    grid-template-columns: minmax(270px, 280px);
+    gap: 10px;
+    justify-items: start;
+  }
+
+  .footer__title--slide {
+    width: 100px;
+    margin: 0;
+    pointer-events: all;
+  }
+
+  .footer__title--slide::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 115%;
+    width: 18px;
+    height: 12px;
+    background-image: url('../images/vektor-list.-top.svg');
+    transition: all 0.4s;
+  }
+
+  .footer__title--slide-active::after {
+    transform: rotate(180deg);
+  }
+
+  .active .footer__title--slide:active::before {
+    opacity: 1;
+    transition: all .3s;
+  }
+
+  .footer__map,
+  .footer__courses,
+  .footer__contact {
+    margin-top: 12px;
+    display: none;
+  }
+}
+
+/* ================================== 450 ================================ */
+@media (max-width: 450px) {
+
+  /* ==========HEADER-TOP========== */
+  .header__top {
+    left: 0;
+  }
+
+  /* ==========HEADER-BODY========== */
+  .header__title {
+    text-align: center;
+  }
+
+  .header__main {
+    grid-template-columns: 1fr;
+  }
+
+  /* ==========ABOUT US========== */
+  .about__block-btn {
+    flex-direction: column;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto
+  }
+
+  #button--empty-2 {
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  /* ==========CERTIFICATE========== */
+  .certificate__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate__logos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate__list-logos {
+    margin-right: 40px;
+  }
+
+  .certificate__list-logos {
+    margin: 0 0 20px 0;
+  }
+
+  .certificate__list-logos:last-child {
+    margin: 0;
+  }
+
+  /* ==========JOBS========== */
+  .jobs__students-company {
+    grid-template: repeat(6, auto) / repeat(2, 1fr);
+  }
+
+  /* ==========CONTACT========== */
+  .contact__social-list {
+    margin-right: 15px;
+  }
+
+  .contact__address {
+    font-size: 16px;
+  }
+
+  /* ==========FOOTERT========== */
+
+  .footer__bottom-inner {
+    flex-direction: column-reverse;
+  }
+
+  .footer__go-top {
+    margin-bottom: 15px;
+  }
+
+  .footer__copy {
+    text-align: center;
+  }
+}
