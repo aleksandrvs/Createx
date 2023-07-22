@@ -1,0 +1,21 @@
+ /*TEAM*/
+
+Author: Sevostyanov Aleksandr - frontend developer
+
+Telegramm: https://t.me/Aleksandr_VS7
+
+VKontakte: https://vk.com/aleksandr_sevm
+
+Email: sevostyanov-aleksandr2012@yandex.ru
+
+Location: Russia, Moscow region, Balashikha
+
+Site Name: Createx
+                            
+Last update: 11.06.2023
+                          
+Standards: HTML5, CSS3, JS
+                      
+Components: jQuery, Mixitup, Slick slider, WOW.js, Animate.css
+                         
+Software: Visual Studio Code (VSCode)
